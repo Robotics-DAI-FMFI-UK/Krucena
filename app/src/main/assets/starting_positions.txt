@@ -11,7 +11,7 @@ prokofjev:
 krucena:
 
    6<
-2v    5^
+5v    2^
    1>
 
 perinbaba:
