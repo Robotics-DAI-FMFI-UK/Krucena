@@ -4,9 +4,9 @@ positions:
 
 prokofjev:
 
-6>   5v
+6>   2v
 
-2^   1<
+5^   1<
 
 krucena:
 
