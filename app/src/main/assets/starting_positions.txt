@@ -17,7 +17,7 @@ krucena:
 perinbaba:
 
    6> 
-2<    5v
+5<    2v
    1^
 
 neverending story:
