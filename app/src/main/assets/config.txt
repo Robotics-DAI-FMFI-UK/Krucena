@@ -1,6 +1,6 @@
 # set to true only on one of the drones, which is providing wifi hotspot to others
 
-isServer=true
+isServer=false
 
 # choose one of the two ways to annonunce master / server IP: fromHotspot/UDPbroadcast
 # UDPbroadcast is recommended
@@ -13,9 +13,9 @@ obtainServerIP=UDPbroadcast
 # VLC remote control server to play music, set to none to skip
 
 # musicServerIP=none
-# musicServerIP=192.168.7.20
+musicServerIP=192.168.7.13
 
-musicServerIP=10.195.88.79
+# musicServerIP=10.195.88.79
 
 # 4212 is the default VLC remote control port
 musicServerPort=4212
@@ -23,12 +23,12 @@ musicServerPort=4212
 # each drone in the group have different ID, can be any number, dance
 # for the drone is taken from dance_ID.txt or dance_0.txt if the former is not found
 
-droneId=3
+droneId=1
 
 
 # this is used by the server to know if all drones are connected
 
-expectedNumberOfDrones=1
+expectedNumberOfDrones=4
 
 
 # correction for the compass reading (orientation of the floor mat)
@@ -39,7 +39,7 @@ north=-3.45
 # camera color detection
 
 black_maxRGB_t=130
-black_chroma_t=103
+black_chroma_t=100
 red_t=25
 green_t=25
 blue_t=15
