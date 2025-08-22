@@ -120,13 +120,12 @@ class MainActivity : AppCompatActivity() {
         performanceCompleted = false
         agendaIndex = 0
         saveAgendaIndex = -1
+        timeStarted = System.currentTimeMillis()
         if (config.isServer)
             comm.startPlayingMusic(danceNumber) {
-                timeStarted = System.currentTimeMillis()
                 Log.i("Dance", "time master start t=${timeStarted}")
             }
         else {
-            timeStarted = System.currentTimeMillis()
             Log.i("Dance", "time slave start t=${timeStarted}")
 
         }
