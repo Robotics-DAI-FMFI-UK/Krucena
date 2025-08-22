@@ -14,6 +14,12 @@ Limited range - the mat must always remain visible to the drone's downward-facin
 
 They are with H.265 codec that probably only Chrome browser can play.
 
+(For the proper starting locations for these demo dances, see files 
+[start_dance_1.jpg](https://github.com/Robotics-DAI-FMFI-UK/Krucena/blob/main/start_dance_1.jpg), 
+[start_dance_2.jpg](https://github.com/Robotics-DAI-FMFI-UK/Krucena/blob/main/start_dance_2.jpg), 
+[start_dance_3.jpg](https://github.com/Robotics-DAI-FMFI-UK/Krucena/blob/main/start_dance_3.jpg), 
+[start_dance_4.jpg](https://github.com/Robotics-DAI-FMFI-UK/Krucena/blob/main/start_dance_4.jpg))
+
 
 ## Localization mat
 
