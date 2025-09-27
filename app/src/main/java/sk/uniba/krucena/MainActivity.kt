@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
     var currentDance : Dance? = null
     var agendaIndex = 0
     var hasTakenOff = false
+    var toPointGimbal = false
     var hasLanded = false
     var numberOfRemainingRepeatsOfThisCommand : Int = 0
     var commandRepeatDelay : Long = 0
@@ -325,6 +326,7 @@ class MainActivity : AppCompatActivity() {
         val takeoffKey = KeyTools.createKey(FlightControllerKey.KeyStartTakeoff)
         keyManager?.performAction(takeoffKey, object : CommonCallbacks.CompletionCallbackWithParam<EmptyMsg> {
             override fun onSuccess(nil: EmptyMsg) {
+                toPointGimbal = true
                 Log.d("Dance","taking off now (5 seconds wait)" )
                 Handler(Looper.getMainLooper()).postDelayed({
                     initAfterTakeoff()

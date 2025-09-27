@@ -147,6 +147,7 @@ class LiveFragment : Fragment() {
                             startMission(action - 1)
                         } else if (action == ACTION_CONFIG) {
                             act.guiState = GUIState.IN_CONFIG
+                            act.toPointGimbal = true
                         }
                     } else if (act.guiState == GUIState.IN_CONFIG) {
                         if (dragged) return@setOnTouchListener true
@@ -159,6 +160,7 @@ class LiveFragment : Fragment() {
                             ACTION_BKCHROMA -> act.guiState = GUIState.BKCHROMA
                             ACTION_DONE -> {
                                 act.config.updateConfig()
+                                act.toPointGimbal = false
                                 act.guiState = GUIState.READY_TO_RUN
                             }
                         }
@@ -311,7 +313,9 @@ class LiveFragment : Fragment() {
 
     fun receiveBitmap(btmp: Bitmap?) {
         btmp?.let {
-            pointGimbalDown()
+            val activity = (requireActivity() as MainActivity)
+
+            if (activity.toPointGimbal) pointGimbalDown()
             val btmpOK = it
             //var btmpOK = rotateBitmapIfNeeded(btmp)
 
@@ -321,7 +325,7 @@ class LiveFragment : Fragment() {
 
             var cameraPosition = FloatArray(4)
 
-            val activity = (requireActivity() as MainActivity)
+
 
             val keyManager = KeyManager.getInstance()
             val attitudeK = KeyTools.createKey(FlightControllerKey.KeyAircraftAttitude)
