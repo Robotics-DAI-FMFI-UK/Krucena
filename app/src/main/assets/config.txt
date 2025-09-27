@@ -1,6 +1,6 @@
 # set to true only on one of the drones, which is providing wifi hotspot to others
 
-isServer=false
+isServer=true
 
 # choose one of the two ways to annonunce master / server IP: fromHotspot/UDPbroadcast
 # UDPbroadcast is recommended
@@ -13,7 +13,7 @@ obtainServerIP=UDPbroadcast
 # VLC remote control server to play music, set to none to skip
 
 # musicServerIP=none
-musicServerIP=192.168.7.13
+musicServerIP=192.168.7.42
 
 # musicServerIP=10.195.88.79
 
